@@ -1,0 +1,98 @@
+<html>
+     <head>
+        <title> Online Survey</title>
+        <style type="text/css">
+            body{
+                background-image: url('wood.png');
+            }
+        
+header{
+text-align:right;
+
+}
+header ul li{
+display:inline-block;
+padding:12px;
+font-size:29px;
+
+}
+a{
+color:black;
+text-decoration:none;
+}
+a:hover{
+    font-size:34px;
+}
+ table{
+                margin-left: 500px;
+                margin-top: 110px;
+                  font-size:30px;
+            }
+            .tx{
+                  background-color: rgba(0,0,0,0.2);
+                border-radius:50px 50px 50px 50px;
+               text-align: center;
+               width: 250px;
+               height: 50px;
+            }
+            .b1{
+                 background-color: rgba(0,0,0,0.2);
+                border-radius:50px 50px 50px 50px;
+                text-align: center;
+               width: 500px;
+               height: 50px;
+            }
+            .b1:hover{
+                 height: 60px;
+            }
+             
+        </style>
+        <script type="text/javascript">
+            function validate(){
+                a=document.getElementById('text').value;
+               
+                if(a.length>0&&a!=0){
+                    y=confirm("Are you sure. This question will be deleted!");
+                    if(y){
+                      form.submit();
+                    }
+                    else{
+                        alert("Data is saved !");
+                    }
+               }
+                   else{
+                    alert("invalid question id");
+                }
+               // console.log(b);           
+            }
+            </script>
+    </head>
+    <header>
+         <div>
+        <ul>
+<li><a href="Admin.html">HOME</a></li>
+<li><a href="">ADD QUESTION</a></li>
+<li><a href="DeleteQues.html">DELETE QUESTION</a></li>
+<li><a href="ViewResult">VIEW RESULT</a></li>
+        </ul>
+        </div>
+        </header>
+    
+        <div>
+            <form action='DeleteQues' name="form">
+                <table cellspacing='30px'>
+                    <tr>
+                        <td> Enter Question Id </td>
+                        <td><input type='text' placeholder="name" class='tx' id="text" name="text"></td>
+                    
+                    </tr>
+                     
+                   
+                    <tr>
+                        <td  colspan='2'><input type='button' value='DELETE' class='b1' onclick='validate()'></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+ 
+</html>

@@ -1,0 +1,98 @@
+<html>
+     <head>
+        <title> Online survey</title>
+        <style type="text/css">
+            body{
+                background-image: url('wood.png');
+            }
+          header{
+text-align:right;
+
+}
+header ul li{
+display:inline-block;
+padding:12px;
+font-size:29px;
+
+}
+a{
+color:black;
+text-decoration:none;
+}
+a:hover{
+    font-size:34px;
+}
+ table{
+                margin-left: 500px;
+                margin-top: 110px;
+                  font-size:30px;
+            }
+            .tx{
+                  background-color: rgba(0,0,0,0.2);
+                border-radius:50px 50px 50px 50px;
+               text-align: center;
+               width: 250px;
+               height: 50px;
+            }
+            .b1{
+                 background-color: rgba(0,0,0,0.2);
+                border-radius:50px 50px 50px 50px;
+                text-align: center;
+               width: 500px;
+               height: 50px;
+            }
+            .b1:hover{
+                 height: 60px;
+            }
+          
+        </style>
+       
+    </head>
+    <header>
+         <div>
+        <ul>
+<li><a href="Admin.html">HOME</a></li>
+<li><a href="">ADD QUESTION</a></li>
+<li><a href="DeleteQues.html">DELETE QUESTION</a></li>
+<li><a href="ViewResult">VIEW RESULT</a></li>
+        </ul>
+        </div>
+        </header>
+    
+        <div>
+            <form action='AddQues' name="form">
+                <table cellspacing='30px'>
+                    <tr>
+                        <td> Enter Question ID</td>
+                        <td><input type='text' placeholder="ID" class='tx' id="tx1" name="tx1" required></td>
+                    
+                    </tr>
+                     <tr>
+                        <td> Enter Question</td>
+                        <td><input type='text' placeholder="question" class='tx' id="tx2" name="tx2" required></td>
+                    </tr>
+                    
+                    <tr>
+                        <td> Enter Option 1</td>
+                        <td><input type='text' placeholder="option 1" class='tx' id="o1" name="o1" required></td>
+                    </tr>
+                     <tr>
+                        <td> Enter Option 2</td>
+                        <td><input type='text' placeholder="option 2" class='tx' id="o2" name="o2" required></td>
+                    </tr>
+                     <tr>
+                        <td> Enter Option 3</td>
+                        <td><input type='text' placeholder="option 3" class='tx' id="o3" name="o3" required></td>
+                    </tr>
+                     <tr>
+                        <td> Enter Option 4</td>
+                        <td><input type='text' placeholder="option 4" class='tx' id="o4" name="o4" required></td>
+                    </tr>
+                    <tr>
+                        <td  colspan='2'><input type='submit' value='ADD QUES' class='b1'></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    
+</html>

@@ -1,0 +1,100 @@
+<html>
+     <head>
+        <title> Online Survey</title>
+        <style type="text/css">
+            body{
+                background-image: url('wood.png');
+            }
+          header{
+text-align:right;
+
+}
+header ul li{
+display:inline-block;
+padding:12px;
+font-size:25px;
+
+}
+a{
+color:black;
+text-decoration:none;
+}
+a:hover{
+    font-size:30px;
+}
+ table{
+                margin-left: 500px;
+                margin-top: 110px;
+                  font-size:30px;
+            }
+            .tx{
+                  background-color: rgba(0,0,0,0.2);
+                border-radius:50px 50px 50px 50px;
+               text-align: center;
+               width: 250px;
+               height: 50px;
+            }
+            .b1{
+                 background-color: rgba(0,0,0,0.2);
+                border-radius:50px 50px 50px 50px;
+                text-align: center;
+               width: 500px;
+               height: 50px;
+            }
+            .b1:hover{
+                 height: 60px;
+            }
+             
+        </style>
+        <script type="text/javascript">
+            function validate(){
+                a=document.getElementById('tx11').value;
+                b=document.getElementById('tx22').value;
+               
+                if(a.length>0){
+                    if(b.length>0){
+                   form.submit();
+               }
+               else{
+                     alert("password field required");
+                }
+               }
+                   else{
+                     alert("enter user name");
+                }
+               // console.log(b);           
+            }
+            </script>
+    </head>
+    <header>
+         <div>
+        <ul>
+           
+<li><a href="User.html">HOME</a></li>
+<li><a href="">LOGIN</a></li>
+<li><a href="TRegister.html">REGISTER</a></li>
+        </ul>
+        </div>
+        </header>
+  
+        <div>
+            <form action='TLogin' name="form">
+                <table cellspacing='30px'>
+                    <tr>
+                        <td> Enter Username</td>
+                        <td><input type='text' placeholder="name" class='tx' id="tx11" name="tx11"></td>
+                    
+                    </tr>
+                     
+                    <tr>
+                        <td> Enter Password</td>
+                        <td><input type='text' placeholder="password" class='tx' id="tx22" name="tx22"></td>
+                    </tr>
+                    <tr>
+                        <td  colspan='2'><input type='button' value='LOGIN' class='b1' onclick='validate()'></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+ 
+</html>

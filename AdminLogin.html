@@ -1,0 +1,83 @@
+<html>
+     <head>
+        <title> Online Survey</title>
+        <style type="text/css">
+            body{
+                background-image: url('wood.png');
+            }
+        
+
+ table{
+                margin-left: 500px;
+                margin-top: 110px;
+                  font-size:30px;
+            }
+            .tx{
+                  background-color: rgba(0,0,0,0.2);
+                border-radius:50px 50px 50px 50px;
+               text-align: center;
+               width: 250px;
+               height: 50px;
+            }
+            .b1{
+                 background-color: rgba(0,0,0,0.2);
+                border-radius:50px 50px 50px 50px;
+                text-align: center;
+               width: 500px;
+               height: 50px;
+            }
+            .b1:hover{
+                 height: 60px;
+            }
+             
+        </style>
+        <script type="text/javascript">
+            function validate(){
+                a=document.getElementById('tx111').value;
+                b=document.getElementById('tx222').value;
+               
+                if(a=="RAM"){
+                    if(b==12345){
+                   form.submit();
+               }
+               else{
+                     alert("invalid user name or password");
+                }
+               }
+                   else{
+                    alert("invalid user name or password");
+                }
+               // console.log(b);           
+            }
+            </script>
+    </head>
+    <header>
+         <div>
+        <ul>
+           
+
+        </ul>
+        </div>
+        </header>
+    
+        <div>
+            <form action='Admin.html' name="form">
+                <table cellspacing='30px'>
+                    <tr>
+                        <td> Enter Username</td>
+                        <td><input type='text' placeholder="name" class='tx' id="tx111" name="tx111"></td>
+                    
+                    </tr>
+                     
+                    <tr>
+                        <td> Enter Password</td>
+                        <td><input type='text' placeholder="password" class='tx' id="tx222" name="tx222"></td>
+                    </tr>
+                    <tr>
+                        <td  colspan='2'><input type='button' value='LOGIN' class='b1' onclick='validate()'></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+ 
+</html>

@@ -1,0 +1,115 @@
+<html>
+     <head>
+        <title> Online survey</title>
+        <style type="text/css">
+            body{
+                background-image: url('wood.png');
+            }
+          header{
+text-align:right;
+
+}
+header ul li{
+display:inline-block;
+padding:12px;
+font-size:29px;
+
+}
+a{
+color:black;
+text-decoration:none;
+}
+a:hover{
+    font-size:34px;
+}
+ table{
+                margin-left: 500px;
+                margin-top: 110px;
+                  font-size:30px;
+            }
+            .tx{
+                  background-color: rgba(0,0,0,0.2);
+                border-radius:50px 50px 50px 50px;
+               text-align: center;
+               width: 250px;
+               height: 50px;
+            }
+            .b1{
+                 background-color: rgba(0,0,0,0.2);
+                border-radius:50px 50px 50px 50px;
+                text-align: center;
+               width: 500px;
+               height: 50px;
+            }
+            .b1:hover{
+                 height: 60px;
+            }
+          
+        </style>
+        <script type="text/javascript">
+            function validate(){
+                a=document.getElementById('tx1').value;
+                b=document.getElementById('tx2').value;
+               
+                c=document.getElementById('tx3').value;
+               
+               // console.log(a);
+                if(a.length>=3){
+                    if(b.length>=9){
+                   
+                     if(c.length>=5){
+                   form.submit();
+               }
+               else{
+                     alert("password length must be atleast 6 character");
+                }
+               }
+               
+                
+                  else{
+                     // console.log(b);
+                     alert("invalid email");
+                }
+                }
+                   else{
+                     alert("invalid data!!All details are mandatory");
+                }
+               // console.log(b);           
+            }
+            </script>
+    </head>
+    <header>
+         <div>
+        <ul>
+<li><a href="User.html">HOME</a></li>
+<li><a href="TLogin.html">LOGIN</a></li>
+<li><a href="">REGISTER</a></li>
+        </ul>
+        </div>
+        </header>
+    
+        <div>
+            <form action='TRegister' name="form">
+                <table cellspacing='30px'>
+                    <tr>
+                        <td> Enter Name</td>
+                        <td><input type='text' placeholder="name" class='tx' id="tx1" name="tx1"></td>
+                    
+                    </tr>
+                     <tr>
+                        <td> Enter Email</td>
+                        <td><input type='text' placeholder="email" class='tx' id="tx2" name="tx2"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td> Enter Password</td>
+                        <td><input type='text' placeholder="password" class='tx' id="tx3" name="tx3"></td>
+                    </tr>
+                    <tr>
+                        <td  colspan='2'><input type='button' value='REGISTER' class='b1' onclick='validate()'></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    
+</html>
